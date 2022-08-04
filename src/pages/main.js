@@ -42,7 +42,6 @@ function Main(){
             setComments(comments)
         })
     }, [])
-    console.log(postInfo)
     return (
         <>
             {!isOpen
