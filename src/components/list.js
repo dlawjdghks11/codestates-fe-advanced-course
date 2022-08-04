@@ -18,19 +18,21 @@ function List({posts = [], comments = [], offset, setIsOpen, setPostInfo}){
         return <div>Loading...</div>
     }
     return data.slice(offset, offset + 10).map(({userId, id, title, body, comments}) => {
-        return (<>
-            <Title 
-                key={id} 
-                id={id} 
-                userId={userId} 
-                title={title} 
-                body={body} 
-                comments={comments}
-                setPostInfo={setPostInfo}
-                setIsOpen={setIsOpen}
-            />
-            <BoundaryLine /></>)
-
+        return (
+            <div key={id}>
+                <Title 
+                    key={id} 
+                    id={id} 
+                    userId={userId} 
+                    title={title} 
+                    body={body} 
+                    comments={comments}
+                    setPostInfo={setPostInfo}
+                    setIsOpen={setIsOpen}
+                />
+                <BoundaryLine/>
+            </div>
+            )
     })
 }
 
