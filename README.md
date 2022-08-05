@@ -2,7 +2,8 @@
 
 - 배포 링크<br>
 https://codestates-fe-advanced-course-nine.vercel.app/
-- 프로젝트 실행 방법
+- 프로젝트 실행 방법<br>
+git clone 후 npm install, npm start
 - 사용한 스택 목록<br>
 Javascript, React, styled-components, axios
 - 구현한 기능 목록 (Software Requirement Specification)<br>
